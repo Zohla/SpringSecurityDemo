@@ -1,4 +1,4 @@
-package com.example.springsecdemo;
+package com.example.springb2securitydemo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,5 +11,15 @@ public class LoginController {
 
         return "login";
 
+    }
+
+    @GetMapping("/secret")
+    public String secretZ(){
+        return "secret";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+        return "admin";
     }
 }
